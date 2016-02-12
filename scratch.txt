@@ -1,0 +1,5 @@
+https://www.reddit.com/r/golang/comments/2u8st7/how_do_i_serve_a_file_from_my_server_for_download/
+
+
+#start up command if the dockerfile was build with -t download_server
+ docker run -ti --rm --name serv -p 55555:55555 -e LISTEN_PORT=55555 -v $(pwd):/data download_server
